@@ -12,8 +12,7 @@ FetchContent_Declare(
 
 FetchContent_MakeAvailable(JUCE)
 
-juce_add_plugin(MFProductionVocalEnhancer
-juce_generate_juce_header(MFProductionVocalEnhancer)
+juce_add_plugin(MFProductionVocalEnhancerjuce_generate_juce_header(MFProductionVocalEnhancer)
     COMPANY_NAME "MF Production"
     BUNDLE_ID "com.mfproduction.vocalenhancer"
     PLUGIN_MANUFACTURER_CODE MFPr
