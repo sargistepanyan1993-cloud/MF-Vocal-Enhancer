@@ -1,3 +1,4 @@
+
 cmake_minimum_required(VERSION 3.22)
 
 project(MFProductionVocalEnhancer VERSION 1.0.0)
@@ -12,7 +13,7 @@ FetchContent_Declare(
 
 FetchContent_MakeAvailable(JUCE)
 
-juce_add_plugin(MFProductionVocalEnhancerjuce_generate_juce_header(MFProductionVocalEnhancer)
+juce_add_plugin(MFProductionVocalEnhancer
     COMPANY_NAME "MF Production"
     BUNDLE_ID "com.mfproduction.vocalenhancer"
     PLUGIN_MANUFACTURER_CODE MFPr
@@ -25,6 +26,8 @@ juce_add_plugin(MFProductionVocalEnhancerjuce_generate_juce_header(MFProductionV
     IS_MIDI_EFFECT FALSE
     COPY_PLUGIN_AFTER_BUILD FALSE
 )
+
+juce_generate_juce_header(MFProductionVocalEnhancer)
 
 target_sources(MFProductionVocalEnhancer
     PRIVATE
